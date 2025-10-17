@@ -5,11 +5,14 @@
   "description": "A Strapi application",
   "scripts": {
     "build": "strapi build",
+    "build:win": "cross-env NODE_ENV=production npm run build",
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
+    "seed:papeless": "node ./scripts/seed-papeless.js",
+    "seed:categorie": "node ./scripts/seed-categorie.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
@@ -17,15 +20,22 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.19.0",
+    "@strapi/plugin-color-picker": "^5.20.0",
     "@strapi/plugin-users-permissions": "5.19.0",
     "@strapi/strapi": "5.19.0",
     "better-sqlite3": "11.3.0",
+    "cross-env": "^10.0.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "socket.io": "^4.8.1",
+    "strapi-csv-import-export": "^0.0.6",
+    "strapi-health-plugin": "^1.2.1",
+    "strapi-plugin-generate-data": "^2.0.4",
+    "styled-components": "^6.0.0",
+    "web-push": "^3.6.7"
   },
   "devDependencies": {
     "@types/node": "^20",

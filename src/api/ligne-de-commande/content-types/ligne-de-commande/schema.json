@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ligne_de_commandes",
+  "info": {
+    "singularName": "ligne-de-commande",
+    "pluralName": "ligne-de-commandes",
+    "displayName": "ligneDeCommande"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "unitPrice": {
+      "type": "integer"
+    },
+    "produit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::produit.produit",
+      "inversedBy": "ligne_de_commandes"
+    },
+    "commande": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::commande.commande",
+      "inversedBy": "ligneDeCommande"
+    },
+    "test": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produits",
+  "info": {
+    "singularName": "produit",
+    "pluralName": "produits",
+    "displayName": "Produit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Nom"
+    },
+    "imagePrincipale": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "imagesSecondaire": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "prix": {
+      "type": "integer",
+      "default": 1
+    },
+    "tempsPreparation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "produits"
+    },
+    "stock": {
+      "type": "integer",
+      "conditions": {
+        "visible": {
+          "!=": [
+            {
+              "var": "isStock"
+            },
+            false
+          ]
+        }
+      }
+    },
+    "isStock": {
+      "type": "boolean",
+      "default": false
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tenant.tenant",
+      "inversedBy": "produits"
+    },
+    "ligne_de_commandes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ligne-de-commande.ligne-de-commande",
+      "mappedBy": "produit"
+    }
+  }
+}

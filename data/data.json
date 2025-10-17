@@ -28,25 +28,28 @@
     ]
   },
   "categories": [
+    { "nom": "Entrées", "slug": "entrees", "image": "salade.png" },
     {
-      "name": "news",
-      "slug": "news"
+      "nom": "Soupes & Ragoûts",
+      "slug": "soupes-ragouts",
+      "image": "pasta.png"
     },
     {
-      "name": "tech",
-      "slug": "tech"
+      "nom": "Barbecue Coréen",
+      "slug": "barbecue-coreen",
+      "image": "pizza.png"
     },
     {
-      "name": "food",
-      "slug": "food"
+      "nom": "Plats Principaux",
+      "slug": "plats-principaux",
+      "image": "burger.png"
     },
+    { "nom": "Nouilles", "slug": "nouilles", "image": "pasta.png" },
+    { "nom": "Banchan", "slug": "banchan", "image": "salade.png" },
     {
-      "name": "nature",
-      "slug": "nature"
-    },
-    {
-      "name": "story",
-      "slug": "story"
+      "nom": "Desserts & Boissons",
+      "slug": "desserts-boissons",
+      "image": "burger.png"
     }
   ],
   "authors": [

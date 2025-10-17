@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_businesses",
+  "info": {
+    "singularName": "category-business",
+    "pluralName": "category-businesses",
+    "displayName": "categoryBusiness"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nom"
+    },
+    "tenants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tenant.tenant",
+      "mappedBy": "category_business"
+    }
+  }
+}

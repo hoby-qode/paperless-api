@@ -1,0 +1,226 @@
+{
+  "categories": [
+    { "nom": "Entrées", "slug": "entrees", "image": "salade.png" },
+    {
+      "nom": "Soupes & Ragoûts",
+      "slug": "soupes-ragouts",
+      "image": "pasta.png"
+    },
+    {
+      "nom": "Barbecue Coréen",
+      "slug": "barbecue-coreen",
+      "image": "pizza.png"
+    },
+    {
+      "nom": "Plats Principaux",
+      "slug": "plats-principaux",
+      "image": "burger.png"
+    },
+    { "nom": "Nouilles", "slug": "nouilles", "image": "pasta.png" },
+    { "nom": "Banchan", "slug": "banchan", "image": "salade.png" },
+    {
+      "nom": "Desserts & Boissons",
+      "slug": "desserts-boissons",
+      "image": "burger.png"
+    }
+  ],
+  "produits": [
+    {
+      "Nom": "Kimchi traditionnel",
+      "Description": "Chou fermenté épicé",
+      "slug": "kimchi-traditionnel",
+      "imagePrincipale": "salade.png",
+      "imagesSecondaire": [],
+      "prix": 5000,
+      "tempsPreparation": "5 min",
+      "category": {
+        "id": 9
+      }
+    },
+    {
+      "Nom": "Mandus frits",
+      "Description": "Raviolis coréens croustillants",
+      "slug": "mandus-frits",
+      "imagePrincipale": "pizza.png",
+      "imagesSecondaire": [],
+      "prix": 8000,
+      "tempsPreparation": "10 min",
+      "category": {
+        "id": 10
+      }
+    },
+    {
+      "Nom": "Soupe Kimchi Jjigae",
+      "Description": "Soupe épicée au kimchi et porc",
+      "slug": "kimchi-jjigae",
+      "imagePrincipale": "pasta.png",
+      "imagesSecondaire": [],
+      "prix": 12000,
+      "tempsPreparation": "15 min",
+      "category": {
+        "id": 11
+      }
+    },
+    {
+      "Nom": "Soupe Doenjang",
+      "Description": "Soupe de pâte de soja fermentée",
+      "slug": "doenjang-soup",
+      "imagePrincipale": "salade.png",
+      "imagesSecondaire": [],
+      "prix": 11000,
+      "tempsPreparation": "12 min",
+      "category": {
+        "id": 12
+      }
+    },
+    {
+      "Nom": "Samgyeopsal",
+      "Description": "Poitrine de porc grillée",
+      "slug": "samgyeopsal",
+      "imagePrincipale": "burger.png",
+      "imagesSecondaire": [],
+      "prix": 18000,
+      "tempsPreparation": "20 min",
+      "category": {
+        "id": 13
+      }
+    },
+    {
+      "Nom": "Galbi",
+      "Description": "Côtes de bœuf marinées grillées",
+      "slug": "galbi",
+      "imagePrincipale": "pizza.png",
+      "imagesSecondaire": [],
+      "prix": 22000,
+      "tempsPreparation": "25 min",
+      "category": {
+        "id": 14
+      }
+    },
+    {
+      "Nom": "Bibimbap",
+      "Description": "Riz, légumes, bœuf et sauce gochujang",
+      "slug": "bibimbap",
+      "imagePrincipale": "salade.png",
+      "imagesSecondaire": [],
+      "prix": 15000,
+      "tempsPreparation": "15 min",
+      "category": {
+        "id": 9
+      }
+    },
+    {
+      "Nom": "Bulgogi",
+      "Description": "Bœuf mariné sauté",
+      "slug": "bulgogi",
+      "imagePrincipale": "burger.png",
+      "imagesSecondaire": [],
+      "prix": 17000,
+      "tempsPreparation": "18 min",
+      "category": {
+        "id": 10
+      }
+    },
+    {
+      "Nom": "Japchae",
+      "Description": "Nouilles de patate douce sautées",
+      "slug": "japchae",
+      "imagePrincipale": "pasta.png",
+      "imagesSecondaire": [],
+      "prix": 14000,
+      "tempsPreparation": "12 min",
+      "category": {
+        "id": 11
+      }
+    },
+    {
+      "Nom": "Ramyeon",
+      "Description": "Nouilles instantanées coréennes",
+      "slug": "ramyeon",
+      "imagePrincipale": "pizza.png",
+      "imagesSecondaire": [],
+      "prix": 9000,
+      "tempsPreparation": "7 min",
+      "category": {
+        "id": 12
+      }
+    },
+    {
+      "Nom": "Kimchi Bokkeum",
+      "Description": "Kimchi sauté avec porc",
+      "slug": "kimchi-bokkeum",
+      "imagePrincipale": "salade.png",
+      "imagesSecondaire": [],
+      "prix": 10000,
+      "tempsPreparation": "10 min",
+      "category": {
+        "id": 13
+      }
+    },
+    {
+      "Nom": "Namul variés",
+      "Description": "Assortiment de légumes marinés",
+      "slug": "namul",
+      "imagePrincipale": "burger.png",
+      "imagesSecondaire": [],
+      "prix": 8000,
+      "tempsPreparation": "8 min",
+      "category": {
+        "id": 9
+      }
+    },
+    {
+      "Nom": "Bingsu",
+      "Description": "Glace pilée coréenne",
+      "slug": "bingsu",
+      "imagePrincipale": "pizza.png",
+      "imagesSecondaire": [],
+      "prix": 12000,
+      "tempsPreparation": "5 min",
+      "category": {
+        "id": 10
+      }
+    },
+    {
+      "Nom": "Thé glacé au citron",
+      "Description": "Boisson rafraîchissante",
+      "slug": "the-glace-citron",
+      "imagePrincipale": "pasta.png",
+      "imagesSecondaire": [],
+      "prix": 6000,
+      "tempsPreparation": "3 min",
+      "category": {
+        "id": 11
+      }
+    }
+  ],
+  "commandes": [
+    {
+      "nom": "Commande #1",
+      "slug": "commande-1",
+      "table": "nhf5pgmxambenquu73pkdgx0",
+      "produits": ["Bibimbap", "Thé glacé au citron"],
+      "statusCommande": "new",
+      "type": "sur_place",
+      "prixTotal": 21000
+    },
+    {
+      "nom": "Commande #2",
+      "slug": "commande-2",
+      "table": "nhf5pgmxambenquu73pkdgx0",
+      "produits": ["Samgyeopsal", "Ramyeon"],
+      "statusCommande": "preparation",
+      "type": "a_emporter",
+      "prixTotal": 27000
+    },
+    {
+      "nom": "Commande #3",
+      "slug": "commande-3",
+      "table": "tzbj7m2i6wafg1klk5w4p3tj",
+      "produits": ["Galbi", "Soupe Kimchi Jjigae", "Bingsu"],
+      "statusCommande": "ready",
+      "type": "sur_place",
+      "prixTotal": 46000
+    }
+  ]
+}

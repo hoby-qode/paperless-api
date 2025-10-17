@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "singularName": "commande",
+    "pluralName": "commandes",
+    "displayName": "Commande"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nom"
+    },
+    "table": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::table.table",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "sur_place"
+          ]
+        }
+      }
+    },
+    "statusCommande": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "pending",
+        "preparation",
+        "awaiting_payment",
+        "ready",
+        "delivered",
+        "completed",
+        "annuled"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "default": "sur_place",
+      "enum": [
+        "livraison",
+        "a_emporter",
+        "sur_place"
+      ]
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tenant.tenant",
+      "inversedBy": "commandes"
+    },
+    "ligneDeCommande": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ligne-de-commande.ligne-de-commande",
+      "mappedBy": "commande"
+    },
+    "hasDeliveryFee": {
+      "type": "boolean"
+    },
+    "methodeDePayment": {
+      "type": "component",
+      "component": "shared.methode-de-payment",
+      "repeatable": true
+    }
+  }
+}

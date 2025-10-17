@@ -16,11 +16,24 @@
       "type": "string",
       "required": true
     },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
     "favicon": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "siteDescription": {
       "type": "text",
@@ -28,8 +41,54 @@
     },
     "defaultSeo": {
       "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "fondImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "bgpattern": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Theme": {
+      "type": "component",
+      "component": "shared.theme",
       "repeatable": false,
-      "component": "shared.seo"
+      "required": true
+    },
+    "illustration_livraison": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "illustration_sur_place": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "ImagesEnAvantProduit": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }

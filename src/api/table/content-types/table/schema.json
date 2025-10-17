@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tables",
+  "info": {
+    "singularName": "table",
+    "pluralName": "tables",
+    "displayName": "table"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tenant.tenant",
+      "inversedBy": "tables"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "statusTable": {
+      "type": "string"
+    },
+    "chairs": {
+      "type": "json"
+    },
+    "bgTable": {
+      "type": "string"
+    },
+    "shape": {
+      "type": "enumeration",
+      "enum": [
+        "rectangle",
+        "circle"
+      ]
+    }
+  }
+}

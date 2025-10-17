@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_methode_de_payments",
+  "info": {
+    "displayName": "methodeDePayment"
+  },
+  "options": {},
+  "attributes": {
+    "payment": {
+      "type": "string"
+    },
+    "money": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
