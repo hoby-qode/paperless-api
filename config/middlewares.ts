@@ -10,6 +10,7 @@ export default [
         "https://localhost:3000",
         "http://127.0.0.1:3000",
         "http://192.168.0.122:3000", // Ton IP locale
+        "https://paperless.local",
         "https://digital-menu-frontend-template.vercel.app",
         "https://7859ccf15d56.ngrok-free.app",
         // Ajoute d'autres IPs si besoin
